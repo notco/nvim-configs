@@ -1,1 +1,1 @@
-Place all items in side '~/.config/nvim/'
+Place all items inside '~/.config/nvim/'
