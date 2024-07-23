@@ -9,7 +9,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "tsserver", "elixirls", "volar" },
+				ensure_installed = { "lua_ls", "tsserver", "volar" },
 			})
 		end,
 	},
@@ -26,6 +26,7 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.elixirls.setup({
+        cmd = {"/Users/igol/quick_paths/elixir-ls/release/language_server.sh"},
 				capabilities = capabilities,
 			})
 			lspconfig.volar.setup({
